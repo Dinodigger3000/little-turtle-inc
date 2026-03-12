@@ -1,0 +1,35 @@
+﻿
+title: AuditionRoomTable
+position: 115,136
+---
+Table: The table the dons sit at during the auditions. You can feel their radiance radiating from it. Or did one of them pass wind?
+===
+
+
+title: AuditionRoomDonNotes
+position: 113,5
+---
+Don Contento’s notes: The notes are full of positive feedback. Almost to a sickening extent
+===
+
+title: AuditionRoomLacrimosoNotes
+position: 320,8
+---
+Don Lacrimoso’s notes: As you read them, you feel a sense of despair wash over you, as if all joy has vanished from the world, possibly not even present to begin with. You stop reading, but you’ll never fully be the same again.
+===
+title: AuditionRoomCalvoNotes
+position: 321,270
+---
+Don Calvo’s notes: It’s just “Please no one notice the toupe” over and over again.
+===
+title: AuditionRoomBillNotes
+position: 320,139
+---
+Don Bill’s notes: As you read, you discover the secrets of the universe, truths you’ve always known in your heart but never truly processed in your mind, only now clicking. You fight back the urge to shed tears of sheer profundity as you finish reading
+===
+
+title: AuditionRoomEspressoNotes
+position: 117,274
+---
+Don Espresso’s notes: These are the scribblings of a four-year-old. You question how a man such as this became the head of a major criminal organization. 
+===
