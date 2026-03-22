@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Collision
   - 
   - 
   - 
@@ -49,6 +49,15 @@ TagManager:
     locked: 0
   - name: Layer_2
     uniqueID: 2484483629
+    locked: 0
+  - name: Player
+    uniqueID: 2574972841
+    locked: 0
+  - name: Layer_3
+    uniqueID: 644555097
+    locked: 0
+  - name: Layer_4
+    uniqueID: 1106895019
     locked: 0
   m_RenderingLayers:
   - Default
