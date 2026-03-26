@@ -3,62 +3,42 @@ position: -155,-232
 ---
 
 The game opens on a dimly lit, smoke-filled room. Five men sit at a table facing a stage.
-
 FirstGuy: Next contestant!
-
 A man walks onto the stage.
-
 Man: First let me say how incredible it is to be in the presence of such illustrious men! Don Contento!
-
 Don Contento: AYYYYYY!
-
 Man: Don Lacrimoso!
-
 Don Lacrimoso: Aw, forget it.
-
 Man: Don Calvo!
-
 Don Calvo: You just call me Baldo?!
-
 Man: Don Bill!
-
 Don Bill: hi, i'm bill.
-
 Man: Don Espresso!
-
 Don Espresso: HEYHOWYADOINREALLYGREATTOBEHERELET’SGETONWITHIT
-
-Man: As you’ll see at your table, my resumé is filled with service to the families...
-
-<<show_resume>>
-Don Calvo: Wait, Boba was you?
-
+Man: As you’ll see at your table, my resumé is filled with service to the families. I helped in the Seventh Street Massacre, I hid Joey the Toes’s body, I whacked Bobo the Clown when he didn’t pay his dues.
+Don Calvo: Wait, Bobo was you?
 Man: Yeah, it was. Wh-
 
 <<play_sound "gunshot">>
-The man is shot dead.
+// show the gun cutscene
 
-Don Calvo: My kid loved Boba. Cried for three days.
-
+Don Calvo: My kid loved Bobo. Cried for three days.
 Don Lacrimoso: We’re gonna be here all week at this rate…
-
 Don Espresso: SORRYGUYSIGOTTAGO!
-
 Don Bill: again?
-
-Don Contento: It’s fine!
-
+Don Contento: It’s fine! We know how you love your coffee.
 Don Calvo: Oof, madone!
 
-Don Espresso runs off.
+// Don Espresso runs off.
 
 The camera cuts to you and a headset person in another room.
 
 Headset person: Alright, you’re up next, uhhhhh, what was your name again?
 
 <<declare $playerName = "nobody">>
+// make the player enter their name
 
-Headset person: Ok {$playerName}, you’ve got about 20 minutes to look around.
+Headset person: Ok {$playerName} you should have about… 20 minutes to look around, with how long Don Espresso takes in the bathroom.
 
 -> explore the room
     <<jump ExploreRoom>>
@@ -80,6 +60,7 @@ You look around at the other contestants.
 title: Contestant1
 position: -338,80
 ---
+Contestant 1: O! Whatchu looking at?
 -> Nothing much
     Contestant 1: Ay! You saying I’m “nothing much!” Get the fuck outta here!
     -> explore the room
@@ -88,6 +69,7 @@ position: -338,80
     Contestant 1: The fuck you say to me?!
     -> You heard what I said, stugot!
         <<start_combat "contestant1">>
+        // TODO add combat
     -> Oh, relax! I’m just breaking balls!
         Contestant 1: Well, don’t do it again.
         -> explore the room
@@ -99,12 +81,13 @@ position: -338,80
         -> Look at little Mobby Jr, gonna cry?
             Contestant 1: Shut up!
             <<start_combat "contestant1">>
-    -> I’m sorry, didn’t mean anything by it
-        Contestant 1: Maybe don’t play with a man’s feelings.
-        -> Maybe we go out sometime?
-            Contestant 1: I’d uh, like that a lot.
-            -> explore the room
-                <<jump ExploreRoom>>
+        -> I’m sorry, didn’t mean anything by it
+            Contestant 1: Maybe don’t play with a man’s feelings.
+    -> Maybe we go out sometime?
+        Contestant 1: I’d uh, like that a lot.
+
+    -> explore the room
+        <<jump ExploreRoom>>
 ===
 
 title: Contestant2
@@ -114,32 +97,24 @@ Contestant 2: Name’s Joey Two Shoes. On account that I got two shoes.
 
 -> Ok, my name’s {$playerName}
     Contestant 2: Nice to meet ya.
-    -> explore the room
-        <<jump ExploreRoom>>
 -> Really, that’s it?
-    Contestant 2: Yeah, we’re running low on nicknames.
-    -> explore the room
-        <<jump ExploreRoom>>
--> Damn, man, that sucks.
-    Contestant 2: Yeah, it does.
-    -> explore the room
-        <<jump ExploreRoom>>
+    Contestant 2: Yeah, we’re running low on nicknames these days.
+    -> Damn, man, that sucks.
+        Contestant 2: Yeah, it does.
+    -> Damn, man, that’s stupid.
+        Contestant 2: Ya don’t need to rub it in.
+        -> Sorry
+            Contestant 2: It’s alright.
+        -> I mean, REALLY stupid
+            Contestant 2: You trying to get whacked, you stunad?!
+            -> Ok, I’ll stop
+                Contestant 2: Good.
+            -> The stupidest goddamn nickname I’ve ever heard!
+                Contestant 2: Alright, that does it!
+                <<start_combat "contestant2">>
 
--> Damn, man, that’s stupid.
-    Contestant 2: Ya don’t need to rub it in.
-    -> Sorry
-        Contestant 2: It’s alright.
-        -> explore the room
-            <<jump ExploreRoom>>
-    -> I mean, REALLY stupid
-        Contestant 2: You trying to get whacked?!
-        -> Ok, I’ll stop
-            Contestant 2: Good.
-            -> explore the room
-                <<jump ExploreRoom>>
-        -> The stupidest nickname ever!
-            Contestant 2: Alright, that does it!
-            <<start_combat "contestant2">>
+-> explore the room
+    <<jump ExploreRoom>>
 ===
 
 title: WaitForTurn
