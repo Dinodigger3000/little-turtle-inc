@@ -499,6 +499,112 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
+--- !u!1 &789617771689143869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8165796138814472961}
+  - component: {fileID: 2860148209701822792}
+  - component: {fileID: 2773605381590365519}
+  - component: {fileID: 7170322804012536416}
+  m_Layer: 0
+  m_Name: AuditionDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8165796138814472961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789617771689143869}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6135277140787948337}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2860148209701822792
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789617771689143869}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &2773605381590365519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789617771689143869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2b7c386e16046febbb8d2e2c2aea02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TripWireTeleport
+  targetSpawnID: WaitingRoomToAudition
+--- !u!114 &7170322804012536416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789617771689143869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aae64cb276fc42ea91d853182664cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TripWireSpawn
+  spawnID: AuditionToWaitingRoom
 --- !u!1 &4245056241387175394
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +641,8 @@ Transform:
   - {fileID: 6472740702004973471}
   - {fileID: 8575657538598576769}
   - {fileID: 1352524366619521622}
+  - {fileID: 3906530202347166551}
+  - {fileID: 8165796138814472961}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6837703174138888220
@@ -2496,13 +2604,13 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 838f0e4dbf7084af2a7c0ce6c4c855ad, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 5dd10899361294c9f8464750dca81967, type: 2}
+    m_Data: {fileID: 11400000, guid: 8c8bfb51031e642a98d222152d97739a, type: 2}
   - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: 6e0d40a6f5cab4c228014730395056b3, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 39b3dcc927eaf43d694e3cfe0d7efd8c, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: bc9fafba992954c6d9edb2fcfbee3803, type: 2}
+    m_Data: {fileID: 11400000, guid: 68ac86324b8e74b3f81c58e6f97d9ea8, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: a3380b005f5fc499693d48673159e8af, type: 2}
   - m_RefCount: 1
@@ -2579,9 +2687,9 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 887853669, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1363211196, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
+    m_Data: {fileID: 1352395396, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1287611547, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
+    m_Data: {fileID: -734195853, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1257230728, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
   - m_RefCount: 1
@@ -2798,7 +2906,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2808,7 +2916,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2827,16 +2935,16 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 1677140687, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 1858942402, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 1677140687, guid: 6bf8450db813a4a6791c60ea920627fa, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 2
     m_Data:
@@ -5311,3 +5419,109 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 7850587916566050102}
+--- !u!1 &7992108880561643694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3906530202347166551}
+  - component: {fileID: 6121066755795269959}
+  - component: {fileID: 17460729584770472}
+  - component: {fileID: 3442980887705201451}
+  m_Layer: 0
+  m_Name: MainHallMiddleDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3906530202347166551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992108880561643694}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6135277140787948337}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6121066755795269959
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992108880561643694}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -2}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &17460729584770472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992108880561643694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c2b7c386e16046febbb8d2e2c2aea02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TripWireTeleport
+  targetSpawnID: WaitingRoomToMainHallMiddle
+--- !u!114 &3442980887705201451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992108880561643694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aae64cb276fc42ea91d853182664cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TripWireSpawn
+  spawnID: MainHallMiddleToWaitingRoom
