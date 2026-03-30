@@ -19,7 +19,7 @@ Man: As you’ll see at your table, my resumé is filled with service to the fam
 Don Calvo: Wait, Bobo was you?
 Man: Yeah, it was. Wh-
 
-<<play_sound "gunshot">>
+//<<play_sound "gunshot">>
 // show the gun cutscene
 
 Don Calvo: My kid loved Bobo. Cried for three days.
@@ -68,7 +68,9 @@ Contestant 1: O! Whatchu looking at?
 -> That ugly mug
     Contestant 1: The fuck you say to me?!
     -> You heard what I said, stugot!
-        <<start_combat "contestant1">>
+        //<<start_combat "contestant1">>
+        *Bad ending
+        <<stop>>
         // TODO add combat
     -> Oh, relax! I’m just breaking balls!
         Contestant 1: Well, don’t do it again.
@@ -80,7 +82,9 @@ Contestant 1: O! Whatchu looking at?
         Contestant 1: Oh… It’s not like I care…
         -> Look at little Mobby Jr, gonna cry?
             Contestant 1: Shut up!
-            <<start_combat "contestant1">>
+            //<<start_combat "contestant1">>
+            *Bad ending 
+            <<stop>>
         -> I’m sorry, didn’t mean anything by it
             Contestant 1: Maybe don’t play with a man’s feelings.
     -> Maybe we go out sometime?
@@ -111,7 +115,9 @@ Contestant 2: Name’s Joey Two Shoes. On account that I got two shoes.
                 Contestant 2: Good.
             -> The stupidest goddamn nickname I’ve ever heard!
                 Contestant 2: Alright, that does it!
-                <<start_combat "contestant2">>
+                //<<start_combat "contestant2">>
+                *Bad ending 
+                <<stop>>
 
 -> explore the room
     <<jump ExploreRoom>>
@@ -121,5 +127,4 @@ title: WaitForTurn
 position: 106,104
 ---
 You decide to wait quietly...
-<<end>>
 ===

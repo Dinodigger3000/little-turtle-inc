@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Yarn.Unity;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -14,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
 
   [Header("Input Settings")]
   public InputAction moveAction;
+
+  [Header("Dialogue System")]
+  //[SerializeField] private DialogueRunner dialogueRunner;
+  private bool dialogueLock = false;
 
   private Rigidbody2D rb;
   private Vector2 movement;
@@ -37,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
   // Fixed time interval updates (movement ties to time, not framerate)
   void FixedUpdate()
   {
+    // Skip movement entirely if dialogue is active
+    if (dialogueLock) return;
+
     // Only run if the player is actually trying to move
     if (movement != Vector2.zero)
     {
@@ -79,6 +87,16 @@ public class PlayerMovement : MonoBehaviour
       // We hit a wall and the character stands still
       return false;
     }
+  }
+  public void OnDialogueStart()
+    {
+        dialogueLock = true;
+        rb.linearVelocity = Vector2.zero; // Kill any residual momentum
+    }
+
+  public void OnDialogueComplete()
+  {
+      dialogueLock = false;
   }
 
   // InputSystem stuff, compiler will get angry if we don't have this
