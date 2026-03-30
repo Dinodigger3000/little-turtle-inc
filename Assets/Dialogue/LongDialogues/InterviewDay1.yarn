@@ -5,6 +5,7 @@ Don Contento: Alright, first question… Who would you consider to be your idol?
 -> Robert F. Kennedy Sr
 	Don Espresso: HE’SAFED!
 	GAME OVER
+	<<stop>>
 -> Al Capone
 	Don Contento: Same!
 -> Mickey Mouse
@@ -33,6 +34,7 @@ Don Calvo: How’s my hair look?
 -> That’s hair?
 	BANG!
 	GAME OVER
+	<<stop>>
 
 Don Espresso: YOUWANTSOMECOFFEE?!
 ->YEAH!
@@ -51,5 +53,4 @@ Don Bill: How ya doin’?
 	Don Bill: Oh, alright
 -> Not so great lately, to be honest
 	Don Bill: Oh, I’m sorry to hear that
-
 ===
