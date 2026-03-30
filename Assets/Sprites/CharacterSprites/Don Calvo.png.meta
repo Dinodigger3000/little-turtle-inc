@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 00c2ca7446acb49518a97b1c5799d3ab
+guid: b2e26113522a9474bab486c38e9a2a60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3976105303298372493
-    second: Don Contento_0
+      213: 8903724051516980361
+    second: Don Calvo_0
   - first:
-      213: 657440485545543237
-    second: Don Contento_1
+      213: 4723730396491959431
+    second: Don Calvo_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Don Contento_0
+      name: Don Calvo_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 17
         y: 0
-        width: 35
-        height: 60
+        width: 33
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8375a005b6fd2730800000000000000
-      internalID: 3976105303298372493
+      spriteID: 98c75c4d9d1609b70800000000000000
+      internalID: 8903724051516980361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Don Contento_1
+      name: Don Calvo_1
       rect:
         serializedVersion: 2
-        x: 79
+        x: 81
         y: 0
-        width: 35
-        height: 59
+        width: 33
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54607e963a2bf1900800000000000000
-      internalID: 657440485545543237
+      spriteID: 78c4e99a4cf0e8140800000000000000
+      internalID: 4723730396491959431
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Don Contento_0: 3976105303298372493
-      Don Contento_1: 657440485545543237
+      Don Calvo_0: 8903724051516980361
+      Don Calvo_1: 4723730396491959431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

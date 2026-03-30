@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 00c2ca7446acb49518a97b1c5799d3ab
+guid: 51eeecbc7bb98467181d1669983c3472
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3976105303298372493
-    second: Don Contento_0
+      213: -3201345606384824479
+    second: Don Lacrimoso_0
   - first:
-      213: 657440485545543237
-    second: Don Contento_1
+      213: 7785014481723563157
+    second: Don Lacrimoso_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Don Contento_0
+      name: Don Lacrimoso_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 20
         y: 0
-        width: 35
-        height: 60
+        width: 25
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8375a005b6fd2730800000000000000
-      internalID: 3976105303298372493
+      spriteID: 16fcc28e1298293d0800000000000000
+      internalID: -3201345606384824479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Don Contento_1
+      name: Don Lacrimoso_1
       rect:
         serializedVersion: 2
-        x: 79
+        x: 84
         y: 0
-        width: 35
-        height: 59
+        width: 25
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54607e963a2bf1900800000000000000
-      internalID: 657440485545543237
+      spriteID: 59c9762ac6de90c60800000000000000
+      internalID: 7785014481723563157
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Don Contento_0: 3976105303298372493
-      Don Contento_1: 657440485545543237
+      Don Lacrimoso_0: -3201345606384824479
+      Don Lacrimoso_1: 7785014481723563157
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
