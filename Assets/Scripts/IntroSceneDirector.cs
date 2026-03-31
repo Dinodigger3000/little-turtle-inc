@@ -1,5 +1,7 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Yarn.Unity;
 
 public class IntroSceneDirector : MonoBehaviour
@@ -11,12 +13,40 @@ public class IntroSceneDirector : MonoBehaviour
   [SerializeField] private GameObject don_contento;
   [SerializeField] private GameObject sal_alive;
   [SerializeField] private GameObject sal_dead;
+  [SerializeField] private GameObject player;
+  [SerializeField] private GameObject virtual_camera;
   [SerializeField] private AudioSource audioSource;
   [SerializeField] private AudioClip gun_load;
   [SerializeField] private AudioClip gun_fire;
   [SerializeField] private GameObject gun;
+  private Image fadeImage;
 
+  private void Awake() {
+    // Initialize the fade image for transitions
+    Init_fadeImage();
+  }
 
+  private void Init_fadeImage() // make a black screen for fade transition, hacky implementation
+  {
+    Canvas canvas = gameObject.AddComponent<Canvas>();
+    canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+    canvas.sortingOrder = 999;
+
+    gameObject.AddComponent<CanvasScaler>();
+    gameObject.AddComponent<GraphicRaycaster>();
+
+    fadeImage = new GameObject("FadeImage").AddComponent<Image>();
+    fadeImage.transform.SetParent(transform, false);
+    fadeImage.color = Color.clear;
+    fadeImage.raycastTarget = false;
+
+    // Stretch to fill the canvas
+    RectTransform rt = fadeImage.rectTransform;
+    rt.anchorMin = Vector2.zero;
+    rt.anchorMax = Vector2.one;
+    rt.offsetMin = Vector2.zero;
+    rt.offsetMax = Vector2.zero;
+  }
 
   // Gun load
   [YarnCommand("Gun_load")]
@@ -31,6 +61,12 @@ public class IntroSceneDirector : MonoBehaviour
   public void Gun_fire()
   {
     audioSource.PlayOneShot(gun_fire);
+  }
+
+  [YarnCommand("Sal_enters")]
+  public void Sal_enters()
+  {
+    sal_alive.SetActive(true);
   }
 
   // Sal dies
@@ -49,10 +85,36 @@ public class IntroSceneDirector : MonoBehaviour
     don_espresso.SetActive(false);
   }
 
-  // Finish intro cutscene
-  [YarnCommand("End_intro_dialogue")]
-  public void End_intro_dialogue()
+
+  [YarnCommand("Move_to_waiting_room")]
+  public IEnumerator Move_to_waiting_room()
   {
-    SceneManager.LoadScene(1);
+    // Fade to black
+    float elapsed = 0f;
+    fadeImage.color = Color.clear;
+    while (elapsed < 1.5f)
+    {
+      elapsed += Time.deltaTime;
+      fadeImage.color = Color.Lerp(Color.clear, Color.black, elapsed / 1.5f);
+      yield return null;
+    }
+    fadeImage.color = Color.black;
+
+    yield return new WaitForSeconds(0.75f); // Wait for a moment before transitioning
+    don_bill.SetActive(false);
+    don_calvo.SetActive(false);
+    don_lacrimoso.SetActive(false);
+    don_contento.SetActive(false);
+    player.SetActive(true);
+    virtual_camera.SetActive(true);
+
+    elapsed = 0f;
+    while (elapsed < 1.5f)
+    {
+        elapsed += Time.deltaTime;
+        fadeImage.color = Color.Lerp(Color.black, Color.clear, elapsed / 1.5f);
+        yield return null;
+    }
+    fadeImage.color = Color.clear;
   }
 }

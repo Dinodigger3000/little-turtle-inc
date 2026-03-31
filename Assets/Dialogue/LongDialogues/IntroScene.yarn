@@ -2,22 +2,26 @@
 position: -155,-232
 ---
 
-The game opens on a dimly lit, smoke-filled room. Five men sit at a table facing a stage.
-FirstGuy: Next contestant!
-A man walks onto the stage.
-Man: First let me say how incredible it is to be in the presence of such illustrious men! Don Contento!
+//The game opens on a dimly lit, smoke-filled room. Five men sit at a table facing a stage.
+???: Next contestant!
+<<Sal_enters SceneDirector>>
+<<wait 1>>
+Sal: First let me say how incredible it is to be in the presence of such illustrious men! Don Contento!
 Don Contento: AYYYYYY!
-Man: Don Lacrimoso!
+Sal: Don Lacrimoso!
 Don Lacrimoso: Aw, forget it.
-Man: Don Calvo!
+Sal: Don Calvo!
 Don Calvo: You just call me Baldo?!
-Man: Don Bill!
+Sal: Don Bill!
 Don Bill: hi, i'm bill.
-Man: Don Espresso!
+Sal: Don Espresso!
 Don Espresso: HEYHOWYADOINREALLYGREATTOBEHERELET’SGETONWITHIT
-Man: As you’ll see at your table, my resumé is filled with service to the families. I helped in the Seventh Street Massacre, I hid Joey the Toes’s body, I whacked Bobo the Clown when he didn’t pay his dues.
+Sal: As you’ll see at your table, my resumé is filled with service to the families. 
+Sal: I helped in the Seventh Street Massacre, 
+Sal: I hid Joey the Toes’s body, 
+Sal: I whacked Bobo the Clown when he didn’t pay his dues.
 Don Calvo: Wait, Bobo was you?
-Man: Yeah, it was. Wh-
+Sal: Yeah, it was. Wh-
 
 <<Gun_load SceneDirector>>
 <<wait 2>>
@@ -25,6 +29,7 @@ Man: Yeah, it was. Wh-
 <<wait 2>>
 // show the gun cutscene
 <<Sal_dies SceneDirector>>
+<<wait 1.5>>
 
 Don Calvo: My kid loved Bobo. Cried for three days.
 Don Lacrimoso: We’re gonna be here all week at this rate…
@@ -35,13 +40,19 @@ Don Calvo: Oof, madone!
 
 // Don Espresso runs off.
 <<Espresso_goes_bye_bye SceneDirector>>
-<<End_intro_dialogue SceneDirector>>
+<<Move_to_waiting_room SceneDirector>>
+<<jump AuditionRoomTemp>>
 
 The camera cuts to you and a headset person in another room.
+===
 
-Headset person: Alright, you’re up next, uhhhhh, what was your name again?
+title: AuditionRoomTemp
+---
 
-<<declare $playerName = "nobody">>
+Headset person *pretend you can see other people in the room please*: Alright, you’re up next, uhhhhh, what was your name again? 
+
+you: player
+<<declare $playerName = "player">>
 // make the player enter their name
 
 Headset person: Ok {$playerName} you should have about… 20 minutes to look around, with how long Don Espresso takes in the bathroom.
