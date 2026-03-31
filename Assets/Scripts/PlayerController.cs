@@ -17,8 +17,7 @@ public class PlayerMovement : MonoBehaviour
   public InputAction moveAction;
 
   [Header("Dialogue System")]
-  //[SerializeField] private DialogueRunner dialogueRunner;
-  private bool dialogueLock = false;
+  [SerializeField] private DialogueRunner dialogueRunner;
 
   private Rigidbody2D rb;
   private Vector2 movement;
@@ -29,6 +28,13 @@ public class PlayerMovement : MonoBehaviour
     rb = GetComponent<Rigidbody2D>();
     rb.gravityScale = 0f;
     rb.freezeRotation = true;
+    if (dialogueRunner == null)
+        dialogueRunner = FindFirstObjectByType<DialogueRunner>();
+
+      if (dialogueRunner == null)
+      {
+        Debug.LogWarning("Dialogue Trigger: No DialogueRunner found. Dialogue triggering disabled.");
+      }
     moveAction = InputSystem.actions.FindAction("Move");
   }
 
@@ -43,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
   void FixedUpdate()
   {
     // Skip movement entirely if dialogue is active
-    if (dialogueLock) return;
+    if (dialogueRunner.IsDialogueRunning) return;
 
     // Only run if the player is actually trying to move
     if (movement != Vector2.zero)
@@ -87,16 +93,6 @@ public class PlayerMovement : MonoBehaviour
       // We hit a wall and the character stands still
       return false;
     }
-  }
-  public void OnDialogueStart()
-    {
-        dialogueLock = true;
-        rb.linearVelocity = Vector2.zero; // Kill any residual momentum
-    }
-
-  public void OnDialogueComplete()
-  {
-      dialogueLock = false;
   }
 
   // InputSystem stuff, compiler will get angry if we don't have this

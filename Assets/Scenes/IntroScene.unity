@@ -15133,7 +15133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1728269464
 Transform:
   m_ObjectHideFlags: 0
@@ -15143,7 +15143,7 @@ Transform:
   m_GameObject: {fileID: 1728269463}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: -12.1, z: 0}
+  m_LocalPosition: {x: 3.3200002, y: -11.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15232,6 +15232,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  dialogueRunner: {fileID: 0}
 --- !u!50 &1728269467
 Rigidbody2D:
   serializedVersion: 5
