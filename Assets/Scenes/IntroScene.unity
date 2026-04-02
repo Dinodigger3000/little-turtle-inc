@@ -13376,6 +13376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695308105}
   - component: {fileID: 695308104}
+  - component: {fileID: 695308106}
   m_Layer: 0
   m_Name: Sal_dead
   m_TagString: Untagged
@@ -13428,8 +13429,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1719994455
-  m_SortingLayer: 4
+  m_SortingLayerID: -1810483667
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7172391513840639963, guid: da644f0085003412dabffb1aaaaeaca5, type: 3}
