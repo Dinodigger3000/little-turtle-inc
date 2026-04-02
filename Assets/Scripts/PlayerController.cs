@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
   [Header("Dialogue System")]
   [SerializeField] private DialogueRunner dialogueRunner;
 
+  [SerializeField] private Animator _animator;
+  [SerializeField] private SpriteRenderer _spriteRenderer;
+
   private Rigidbody2D rb;
   private Vector2 movement;
   private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
@@ -43,6 +46,25 @@ public class PlayerMovement : MonoBehaviour
   {
     movement = moveAction.ReadValue<Vector2>();
     movement = movement.normalized;
+
+    if (movement != Vector2.zero)
+    {
+      _animator.SetBool("isWalking", true);
+    }
+    else
+    {
+      _animator.SetBool("isWalking", false);
+    }
+    
+    if (movement.x > 0)
+        _spriteRenderer.flipX = true; // facing right
+    else if (movement.x < 0)
+        _spriteRenderer.flipX = false;  // facing left
+    else
+    {
+        _animator.SetBool("isWalking", false);
+    }
+
   }
 
   // Fixed time interval updates (movement ties to time, not framerate)
