@@ -3912,7 +3912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2b7c386e16046febbb8d2e2c2aea02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TripWireTeleport
-  targetSpawnID: MainHallToEntry
+  targetSpawnID: MainHallMiddleToEntry
 --- !u!114 &8389089236913783903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3925,7 +3925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aae64cb276fc42ea91d853182664cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TripWireSpawn
-  spawnID: EntryToMainHall
+  spawnID: EntryToMainHallMiddle
 --- !u!1 &7831544168198115304
 GameObject:
   m_ObjectHideFlags: 0
