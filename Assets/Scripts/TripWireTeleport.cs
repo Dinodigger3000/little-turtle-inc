@@ -10,7 +10,8 @@ public class TripWireTeleport : MonoBehaviour
   {
     if (collision.CompareTag("Player"))
     {
-      TripWireSpawn[] allSpawns = FindObjectsOfType<TripWireSpawn>();
+      TripWireSpawn[] allSpawns = FindObjectsByType<TripWireSpawn>(FindObjectsSortMode.None);
+
       foreach (TripWireSpawn spawn in allSpawns)
       {
         if (spawn.spawnID == targetSpawnID)
