@@ -57,8 +57,6 @@ you: player
 
 Headset Mike: Ok {$playerName} you should have about… 20 minutes to look around, with how long Don Espresso takes in the bathroom.
 
--> explore the room
-    <<jump ExploreRoom>>
 ===
 
 title: ExploreRoom
@@ -80,8 +78,6 @@ position: -338,80
 Contestant 1: O! Whatchu looking at?
 -> Nothing much
     Contestant 1: Ay! You saying I’m “nothing much!” Get the fuck outta here!
-    -> explore the room
-        <<jump ExploreRoom>>
 -> That ugly mug
     Contestant 1: The fuck you say to me?!
     -> You heard what I said, stugot!
@@ -91,8 +87,6 @@ Contestant 1: O! Whatchu looking at?
         // TODO add combat
     -> Oh, relax! I’m just breaking balls!
         Contestant 1: Well, don’t do it again.
-        -> explore the room
-            <<jump ExploreRoom>>
 -> That handsome face
     Contestant 1: Oh, uh… Heheh
     -> Not!
@@ -107,8 +101,6 @@ Contestant 1: O! Whatchu looking at?
     -> Maybe we go out sometime?
         Contestant 1: I’d uh, like that a lot.
 
-    -> explore the room
-        <<jump ExploreRoom>>
 ===
 
 title: Contestant2
@@ -135,9 +127,6 @@ Contestant 2: Name’s Joey Two Shoes. On account that I got two shoes.
                 //<<start_combat "contestant2">>
                 *Bad ending 
                 <<stop>>
-
--> explore the room
-    <<jump ExploreRoom>>
 ===
 
 title: WaitForTurn

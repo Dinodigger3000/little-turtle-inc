@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b7984b2caba7e4ed3b533bb044a324fd
+guid: ba7390294ee64443b8acbc5d4a4ab6b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3608505948871222746
-    second: interactIcon_0
+      213: -143774572126841323
+    second: tempPerson_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: interactIcon_0
+      name: tempPerson_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 31
-        height: 31
+        x: 9
+        y: 10
+        width: 50
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad56a54ba0df31230800000000000000
-      internalID: 3608505948871222746
+      spriteID: 51655a4d9c5310ef0800000000000000
+      internalID: -143774572126841323
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      interactIcon_0: 3608505948871222746
+      tempPerson_0: -143774572126841323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -39,6 +39,7 @@ public class TriggerDialogue : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            other.transform.Find("InteractIcon").gameObject.SetActive(true); // Show interact icon when player is in range
             Debug.Log("Player entered dialogue trigger area.");
         }
     }
@@ -46,6 +47,7 @@ public class TriggerDialogue : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
+            other.transform.Find("InteractIcon").gameObject.SetActive(false);
             playerInRange = false;
     }
 }
