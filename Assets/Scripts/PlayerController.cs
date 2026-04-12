@@ -24,7 +24,9 @@ public class PlayerMovement : MonoBehaviour
 
   private Rigidbody2D rb;
   private Vector2 movement;
+  private string lastDirection = "Down";
   private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+
 
   void Start()
   {
@@ -44,26 +46,21 @@ public class PlayerMovement : MonoBehaviour
   // Per frame basis (for inputs)
   void Update()
   {
-    movement = moveAction.ReadValue<Vector2>();
-    movement = movement.normalized;
+    movement = moveAction.ReadValue<Vector2>().normalized;
 
-    if (movement != Vector2.zero)
-    {
-      _animator.SetBool("isWalking", true);
-    }
-    else
-    {
-      _animator.SetBool("isWalking", false);
-    }
+    _animator.SetBool("isWalking", movement != Vector2.zero);
+    
+
+    Debug.Log("movement.y = " + movement.y);
+
+    _animator.SetFloat("WalkUp", movement.y);
+    _animator.SetFloat("WalkX", Mathf.Abs(movement.x));
     
     if (movement.x > 0)
         _spriteRenderer.flipX = true; // facing right
     else if (movement.x < 0)
         _spriteRenderer.flipX = false;  // facing left
-    else
-    {
-        _animator.SetBool("isWalking", false);
-    }
+
 
   }
 
