@@ -1,6 +1,6 @@
 ﻿title: HeadsetMikeTime
 ---
-Headset Mike: You ready?
+Vinny Headset: You ready?
 -> Yeehaw
   <<Move_to_interview_day_1 SceneDirector>>
   <<jump InterviewDay1>>

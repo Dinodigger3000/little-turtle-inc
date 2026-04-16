@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
     _animator.SetBool("isWalking", movement != Vector2.zero);
     
 
-    Debug.Log("movement.y = " + movement.y);
+    // Debug.Log("movement.y = " + movement.y);
 
     _animator.SetFloat("WalkUp", movement.y);
     _animator.SetFloat("WalkX", Mathf.Abs(movement.x));

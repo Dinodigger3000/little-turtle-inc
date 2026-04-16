@@ -49,13 +49,13 @@ The camera cuts to you and a headset person in another room.
 title: AuditionRoomIntro
 ---
 
-Headset Mike *pretend you can see other people in the room please*: Alright, you’re up next, uhhhhh, what was your name again? 
+Vinny Headset: Alright, you’re up next, uhhhhh, what was your name again? 
 
 you: player
 <<declare $playerName = "player">>
 // make the player enter their name
 
-Headset Mike: Ok {$playerName} you should have about… 20 minutes to look around, with how long Don Espresso takes in the bathroom.
+Vinny Headset: Ok {$playerName} you should have about… 20 minutes to look around, with how long Don Espresso takes in the bathroom.
 
 ===
 
