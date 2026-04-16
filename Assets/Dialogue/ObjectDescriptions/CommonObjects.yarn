@@ -1,0 +1,16 @@
+
+title: LockedChest
+---
+Locked. Key required.
+-> Unlock chest. Cost 1 key
+  <<Unlock_Chest SceneDirector>>
+  Chest unlocked.
+  <<jump UnlockedChest>>
+-> Leave.
+===
+
+title: UnlockedChest
+---
+Inside contains...
+explicit magazines
+===

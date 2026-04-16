@@ -1,4 +1,61 @@
 ﻿title: HeadsetMikeTime
 ---
-Headset Mike: You're not up yet.
+Headset Mike: You
+===
+
+title: Contestant1
+position: -338,80
+---
+Contestant 1: O! Whatchu looking at?
+-> Nothing much
+  Contestant 1: Ay! You saying I’m “nothing much!” Get the fuck outta here!
+-> That ugly mug
+  Contestant 1: The fuck you say to me?!
+  -> You heard what I said, stugot!
+    //<<start_combat "contestant1">>
+    *Bad ending
+    <<stop>>
+    // TODO add combat
+  -> Oh, relax! I’m just breaking balls!
+    Contestant 1: Well, don’t do it again.
+  -> That handsome face
+    Contestant 1: Oh, uh… Heheh
+    -> Not!
+      Contestant 1: Oh… It’s not like I care…
+      -> Look at little Mobby Jr, gonna cry?
+        Contestant 1: Shut up!
+        //<<start_combat "contestant1">>
+        *Bad ending 
+        <<stop>>
+      -> I’m sorry, didn’t mean anything by it
+        Contestant 1: Maybe don’t play with a man’s feelings.
+      -> Maybe we go out sometime?
+        Contestant 1: I’d uh, like that a lot.
+
+===
+
+title: Contestant2
+position: -338,218
+---
+Contestant 2: Name’s Joey Two Shoes. On account that I got two shoes.
+
+-> Ok, my name’s {$playerName}
+  Contestant 2: Nice to meet ya.
+-> Really, that’s it?
+  Contestant 2: Yeah, we’re running low on nicknames these days.
+  -> Damn, man, that sucks.
+    Contestant 2: Yeah, it does.
+  -> Damn, man, that’s stupid.
+    Contestant 2: Ya don’t need to rub it in.
+    -> Sorry
+      Contestant 2: It’s alright.
+    -> I mean, REALLY stupid
+      Contestant 2: You trying to get whacked, you stunad?!
+      -> Ok, I’ll stop
+        Contestant 2: Good.
+      -> The stupidest goddamn nickname I’ve ever heard!
+        Contestant 2: Alright, that does it!
+        //<<start_combat "contestant2">>
+        *Bad ending 
+        <<stop>>
 ===
