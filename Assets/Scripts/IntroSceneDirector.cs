@@ -14,6 +14,7 @@ public class IntroSceneDirector : MonoBehaviour
   [SerializeField] private GameObject sal_alive;
   [SerializeField] private GameObject sal_dead;
   [SerializeField] private GameObject player;
+  [SerializeField] private GameObject main_camera;
   [SerializeField] private GameObject virtual_camera;
   [SerializeField] private AudioSource audioSource;
   [SerializeField] private AudioClip gun_load;
@@ -21,7 +22,10 @@ public class IntroSceneDirector : MonoBehaviour
   [SerializeField] private GameObject gun;
   private Image fadeImage;
 
-  private void Awake() {
+  Vector3 camera_interview_position = new Vector3(0, 3.37f, -10);
+
+  private void Awake()
+  {
     // Initialize the fade image for transitions
     Init_fadeImage();
   }
@@ -111,9 +115,44 @@ public class IntroSceneDirector : MonoBehaviour
     elapsed = 0f;
     while (elapsed < 1.5f)
     {
-        elapsed += Time.deltaTime;
-        fadeImage.color = Color.Lerp(Color.black, Color.clear, elapsed / 1.5f);
-        yield return null;
+      elapsed += Time.deltaTime;
+      fadeImage.color = Color.Lerp(Color.black, Color.clear, elapsed / 1.5f);
+      yield return null;
+    }
+    fadeImage.color = Color.clear;
+  }
+
+  [YarnCommand("Move_to_interview_day_1")]
+  public IEnumerator Move_to_interview_day_1()
+  {
+    // Fade to black
+    float elapsed = 0f;
+    fadeImage.color = Color.clear;
+    while (elapsed < 1.5f)
+    {
+      elapsed += Time.deltaTime;
+      fadeImage.color = Color.Lerp(Color.clear, Color.black, elapsed / 1.5f);
+      yield return null;
+    }
+    fadeImage.color = Color.black;
+
+    yield return new WaitForSeconds(0.75f); // Wait for a moment before transitioning
+    don_bill.SetActive(true);
+    don_calvo.SetActive(true);
+    don_lacrimoso.SetActive(true);
+    don_contento.SetActive(true);
+    don_espresso.SetActive(true);
+    sal_dead.SetActive(false);
+    player.transform.position = new Vector2(0, -1);
+    virtual_camera.SetActive(false);
+    main_camera.transform.position = camera_interview_position;
+
+    elapsed = 0f;
+    while (elapsed < 1.5f)
+    {
+      elapsed += Time.deltaTime;
+      fadeImage.color = Color.Lerp(Color.black, Color.clear, elapsed / 1.5f);
+      yield return null;
     }
     fadeImage.color = Color.clear;
   }

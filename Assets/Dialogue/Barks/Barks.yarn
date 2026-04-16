@@ -1,6 +1,10 @@
 ﻿title: HeadsetMikeTime
 ---
-Headset Mike: You
+Headset Mike: You ready?
+-> Yeehaw
+  <<Move_to_interview_day_1 SceneDirector>>
+  <<jump InterviewDay1>>
+-> Nuh uh
 ===
 
 title: Contestant1
