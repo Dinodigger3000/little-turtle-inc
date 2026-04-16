@@ -3,72 +3,132 @@
 Don Contento: Alright, first question… Who would you consider to be your idol?
 
 -> Robert F. Kennedy Sr
-  Don Espresso: HE’SAFED!
-  Don Contento: Now, now, hold on. I’m sure he was just breaking balls. You were, weren’t you? 
-  -> No, I’m serious. I always admired his toughness on crime!
-    Contento: Really?
-  -> Yes
-    Contento: Alright, Espresso. You can shoot him. Next!
-    BANG!
-    GAME OVER
-    <<stop>>
-  -> No
-    Contento: See, I knew he was joking! Won’t lie, you had me for a second there.
-    Espresso: I got my eye on you…
-    You have lost favor with Don Espresso
-  -> Yeah, I’m just breaking balls
-    Calvo: You got some nerve…!
-    Contento: Gentlemen, settle down! You can tear each other’s heads off later. Now’s the time to find people to help ya do it, hahaha! Next question!
-    Contento: Glad you got a sense of humor kid, but be careful, Espresso’s coffee addiction gets him pretty antsy…
-    Espresso: I’MNOTADDICTEDICANQUITEANYTIMEIWANT!
-    Calvo: Yeah, I’m sure you’ve quit three times this week!
-    Espresso: YOULOOKINGTOGETWHACKEDTODAYYOUBALDSONOFABITCH?!
+    Don Espresso: HE’SAFED!
+    Don Contento: Now, now, hold on. I’m sure he was just breaking balls. You were, weren’t you? 
+    -> No, I’m serious. I always admired his toughness on crime!
+        Contento: Really?
+    -> Yes
+        Contento: Alright, Espresso. You can shoot him. Next!
+        BANG!
+        GAME OVER
+        <<stop>>
+    -> No
+        Contento: See, I knew he was joking! Won’t lie, you had me for a second there.
+        Espresso: I got my eye on you…
+        You have lost favor with Don Espresso
+    -> Yeah, I’m just breaking balls
+        Calvo: You got some nerve…!
+        Contento: Gentlemen, settle down! You can tear each other’s heads off later. Now’s the time to find people to help ya do it, hahaha! Next question!
+        Contento: Glad you got a sense of humor kid, but be careful, Espresso’s coffee addiction gets him pretty antsy…
+        Espresso: I’MNOTADDICTEDICANQUITEANYTIMEIWANT!
+        Calvo: Yeah, I’m sure you’ve quit three times this week!
+        Espresso: YOULOOKINGTOGETWHACKEDTODAYYOUBALDSONOFABITCH?!
 -> Al Capone
-  Contento: Same! What’s your favorite thing about him?
-  -> His hat
-    Contento: It’s a classic! I own a few fedoras myself, my kid says it makes me look like a nice guy! Didn’t seem very complimentary though
-  -> The tax evasion
-    Contento: Hey, be careful with the tax evasion. That’s how they got ‘im.
-  -> His charitable acts
-    Contento: Oh yeah, I always dress up as Santa at Christmas, just like he did.
-    You have curried favor with Don Contento
+    Contento: Same! What’s your favorite thing about him?
+    -> His hat
+        Contento: It’s a classic! I own a few fedoras myself, my kid says it makes me look like a nice guy! Didn’t seem very complimentary though
+    -> The tax evasion
+        Contento: Hey, be careful with the tax evasion. That’s how they got ‘im.
+    -> His charitable acts
+        Contento: Oh yeah, I always dress up as Santa at Christmas, just like he did.
+        You have curried favor with Don Contento
 -> Mickey Mouse
-  Don Contento: Finally, a sense of humor!
-  You have curried favor with Don Contento
+    Don Contento: Finally, a sense of humor!
+    You have curried favor with Don Contento
 
 Don Lacrimoso: Alright Contento, you’ve eaten up enough time.
 Don Lacrimoso: My turn. What would you do if you felt like you didn’t wanna get out of bed?
 
 -> I’d push myself to get out all the same
-  Don Contento: My kinda guy!
-  Don Bill: The uncaring cruelty of the universe shrinks in the face of the indomitable human spirit
-  You have curried favor with Don Contento and Don Bill
-  Don Lacrimoso: Like it’s that easy…
-  You’ve lost favor with Don Lacrimoso
+    Don Contento: My kinda guy!
+    Don Bill: The uncaring cruelty of the universe shrinks in the face of the indomitable human spirit
+    You have curried favor with Don Contento and Don Bill
+    Don Lacrimoso: Like it’s that easy…
+    You’ve lost favor with Don Lacrimoso
 -> I’m not sure.
-	Don Lacrimoso: Alright…
+    Don Lacrimoso: Alright…
 -> I’d probably have to be dragged out…
-	Don Lacrimoso: Yeah, same…
-	You have curried favor with Don Lacrimoso
+    Don Lacrimoso: Yeah, same…
+    You have curried favor with Don Lacrimoso
 
 Don Calvo: How’s my hair look?
 -> Pretty good!
-	Don Calvo: Oh, thanks!
-	You have curried favor with Don Calvo
--> Very realistic!
-	Don Calvo: You fucking with me?
-	-> Yeah, it looks great.
-    Don Calvo: Thanks
+    Don Calvo: Oh, thanks!
     You have curried favor with Don Calvo
-	-> Yeah, it looks fake
-    Don Calvo: Son of a bitch!
+-> Very realistic!
+    Don Calvo: You fucking with me?
+    -> Yeah, it looks great.
+        Don Calvo: Thanks
+        You have curried favor with Don Calvo
+    -> Yeah, it looks fake
+        Don Calvo: Son of a bitch!
+        BANG!
+        GAME OVER
+        <<stop>>
+    -> No, it looks very realistic!
+        Don Calvo: Well, I, uh, don’t see why you would point that out, seeing as this is my very definitely real hair…
+->That’s hair?
     BANG!
     GAME OVER
     <<stop>>
-	-> No, it looks very realistic!
-    Don Calvo: Well, I, uh, don’t see why you would point that out, seeing as this is my very definitely real hair…
-->That’s hair?
-	BANG!
-	GAME OVER
-  <<stop>>
+
+Don Espresso: YOUWANTSOMECOFFEE?!
+->YEAH!
+    Don Espresso: WHATKIND?
+        ->Decaf
+            Don Espresso: COWARD!
+            You have acquired coffee, but lost favor with Don Espresso
+        ->Something local
+            Don Espresso: HEREYAGO!
+            You have acquired coffee and curried favor with Don Espresso
+        ->Larbucks
+            The color drains from Don Espresso’s face as he gives you a thousand yard stare. 
+            Don Espresso: I’m gonna let you pick again…
+                ->Decaf
+                    Don Espresso: Ok.
+                    You have acquired coffee
+                ->Something local
+                    Don Espresso: That’s better. Knew you’d see things right
+                    You have acquired coffee
+-> Sure…
+    Don Espresso: WHYSOGLUMABOUTIT?!
+    You have lost favor with Don Espresso
+-> No thanks, I’m good.
+    Don Espresso: TOTALLYGETITIT’SNOTFOREVERYONE
+<<wait  0.5>>
+Don Bill: How ya doin’?
+-> Alright
+    Don Bill: Oh, alright
+-> Pretty good
+    Don Bill: That’s nice
+    You have curried favor with Don Bill
+-> Not so great lately, to be honest
+    Don Bill:Oh, I’m sorry to hear that. Why’s that?
+    <<jump InterviewDay1BillTherapyAnswer>>
+
+===
+title: InterviewDay1BillTherapyAnswer
+---
+-> My grandma’s not doing so great…
+    Don Bill: I see. It can be hard losing a loved one, but we all go eventually. Best to accept it rather than waste your time mourning what’s yet to occur.
+    -> Wow, thanks! That’s a really good way to look at things!
+        Don Bill: No problem, if you ever need someone to talk to, you can just reach out to me.
+        You have curried favor with Don Bill
+    -> I don’t need your advice, old man!
+        Don Bill: Oh…
+        You have lost favor with Don Bill. And hurt his feelings. Meanie
+-> My girlfriend broke up with me…
+    Don Bill: Oof! I’ve been there. Going through that can be tough, but at the end of the day, there are plenty of fish in the sea.
+    -> I guess…
+        Don Bill: Hey, chin up. You’ll find someone else
+        You have curried favor with Don Bill
+    -> I just don’t know…
+        Don Bill: I get it. Take your time
+-> I don’t wanna talk about it…
+    Don Bill: You sure? I’m here to listen.
+    -> On second thought… 
+        <<jump InterviewDay1BillTherapyAnswer>>
+    -> No, I really don’t
+        Don Bill: Ok, buddy. We can talk after if you want. And if you survive.
+Don Calvo: Alright, get a move-on! This is an audition, not a therapy session! 
 ===
