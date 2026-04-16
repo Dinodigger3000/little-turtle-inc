@@ -3,22 +3,48 @@
 Don Contento: Alright, first question… Who would you consider to be your idol?
 
 -> Robert F. Kennedy Sr
-	Don Espresso: HE’SAFED!
-	GAME OVER
-	<<stop>>
+  Don Espresso: HE’SAFED!
+  Don Contento: Now, now, hold on. I’m sure he was just breaking balls. You were, weren’t you? 
+  -> No, I’m serious. I always admired his toughness on crime!
+    Contento: Really?
+  -> Yes
+    Contento: Alright, Espresso. You can shoot him. Next!
+    BANG!
+    GAME OVER
+    <<stop>>
+  -> No
+    Contento: See, I knew he was joking! Won’t lie, you had me for a second there.
+    Espresso: I got my eye on you…
+    You have lost favor with Don Espresso
+  -> Yeah, I’m just breaking balls
+    Calvo: You got some nerve…!
+    Contento: Gentlemen, settle down! You can tear each other’s heads off later. Now’s the time to find people to help ya do it, hahaha! Next question!
+    Contento: Glad you got a sense of humor kid, but be careful, Espresso’s coffee addiction gets him pretty antsy…
+    Espresso: I’MNOTADDICTEDICANQUITEANYTIMEIWANT!
+    Calvo: Yeah, I’m sure you’ve quit three times this week!
+    Espresso: YOULOOKINGTOGETWHACKEDTODAYYOUBALDSONOFABITCH?!
 -> Al Capone
-	Don Contento: Same!
+  Contento: Same! What’s your favorite thing about him?
+  -> His hat
+    Contento: It’s a classic! I own a few fedoras myself, my kid says it makes me look like a nice guy! Didn’t seem very complimentary though
+  -> The tax evasion
+    Contento: Hey, be careful with the tax evasion. That’s how they got ‘im.
+  -> His charitable acts
+    Contento: Oh yeah, I always dress up as Santa at Christmas, just like he did.
+    You have curried favor with Don Contento
 -> Mickey Mouse
-	Don Contento: Finally, a sense of humor!
-	You have curried favor with Don Contento
+  Don Contento: Finally, a sense of humor!
+  You have curried favor with Don Contento
 
-Don Lacrimoso: What would you do if you felt like you didn’t wanna get out of bed?
+Don Lacrimoso: Alright Contento, you’ve eaten up enough time.
+Don Lacrimoso: My turn. What would you do if you felt like you didn’t wanna get out of bed?
+
 -> I’d push myself to get out all the same
-    Don Contento: My kinda guy!
-    Don Bill: The uncaring cruelty of the universe shrinks in the face of the indomitable human spirit
-    You have curried favor with Don Contento and Don Bill
-    Don Lacrimoso: Like it’s that easy…
-    You’ve lost favor with Don Lacrimoso
+  Don Contento: My kinda guy!
+  Don Bill: The uncaring cruelty of the universe shrinks in the face of the indomitable human spirit
+  You have curried favor with Don Contento and Don Bill
+  Don Lacrimoso: Like it’s that easy…
+  You’ve lost favor with Don Lacrimoso
 -> I’m not sure.
 	Don Lacrimoso: Alright…
 -> I’d probably have to be dragged out…
@@ -30,27 +56,19 @@ Don Calvo: How’s my hair look?
 	Don Calvo: Oh, thanks!
 	You have curried favor with Don Calvo
 -> Very realistic!
-	Don Calvo: Uh, thanks? // *Quietly* Is he fucking with me?
--> That’s hair?
+	Don Calvo: You fucking with me?
+	-> Yeah, it looks great.
+    Don Calvo: Thanks
+    You have curried favor with Don Calvo
+	-> Yeah, it looks fake
+    Don Calvo: Son of a bitch!
+    BANG!
+    GAME OVER
+    <<stop>>
+	-> No, it looks very realistic!
+    Don Calvo: Well, I, uh, don’t see why you would point that out, seeing as this is my very definitely real hair…
+->That’s hair?
 	BANG!
 	GAME OVER
-	<<stop>>
-
-Don Espresso: YOUWANTSOMECOFFEE?!
-->YEAH!
-	Don Espresso: HEREYAGO
-	You have acquired coffee and curried favor with Don Espresso
--> Sure…
-    Don Espresso: WHYSOGLUMABOUTIT?!
-	You have lost favor with Don Espresso
--> No thanks, I’m good.
-    Don Espresso: TOTALLYGETITIT’SNOTFOREVERYONE
-
-Don Bill: How ya doin’?
--> Pretty good
-	Don Bill: That’s nice You have curried favor with Don Bill
--> Alright
-	Don Bill: Oh, alright
--> Not so great lately, to be honest
-	Don Bill: Oh, I’m sorry to hear that
+  <<stop>>
 ===
