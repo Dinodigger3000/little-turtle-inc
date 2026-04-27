@@ -20,6 +20,8 @@ public class IntroSceneDirector : MonoBehaviour
   [SerializeField] private AudioClip gun_load;
   [SerializeField] private AudioClip gun_fire;
   [SerializeField] private GameObject gun;
+  [SerializeField] private GameObject locked_chest;
+  [SerializeField] private GameObject unlocked_chest;
   private Image fadeImage;
 
   Vector3 camera_interview_position = new Vector3(0, 3.37f, -10);
@@ -155,5 +157,13 @@ public class IntroSceneDirector : MonoBehaviour
       yield return null;
     }
     fadeImage.color = Color.clear;
+  }
+
+  // Unlock chest
+  [YarnCommand("Unlock_Chest")]
+  public void Unlock_Chest()
+  {
+    locked_chest.SetActive(false);
+    unlocked_chest.SetActive(true);
   }
 }

@@ -10,10 +10,10 @@ public class DemoSceneDirector : MonoBehaviour
   [SerializeField] private GameObject unlocked_chest;
 
   // Unlock chest
-  [YarnCommand("Unlock_Chest")]
-  public void Unlock_Chest()
-  {
-    locked_chest.SetActive(false);
-    unlocked_chest.SetActive(true);
-  }
+  // [YarnCommand("Unlock_Chest")]
+  // public void Unlock_Chest()
+  // {
+  //   locked_chest.SetActive(false);
+  //   unlocked_chest.SetActive(true);
+  // }
 }
