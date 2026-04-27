@@ -1,7 +1,11 @@
 ﻿title: IntroScene
 position: -155,-232
 ---
-
+<<declare $contentoFavor = 1>>
+<<declare $lacrimosoFavor = 1>>
+<<declare $calvoFavor = 1>>
+<<declare $billFavor = 1>>
+<<declare $espressoFavor = 1>>
 //The game opens on a dimly lit, smoke-filled room. Five men sit at a table facing a stage.
 ???: Next contestant!
 <<Sal_enters SceneDirector>>

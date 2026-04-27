@@ -63,3 +63,45 @@ Contestant 2: Name’s Joey Two Shoes. On account that I got two shoes.
         *Bad ending 
         <<stop>>
 ===
+
+title: judgement
+---
+<<if $contentoFavor < 0 || $lacrimosoFavor < 0 || $calvoFavor < 0 || $billFavor < 0 || $espressoFavor < 0>>
+  <<if $contentoFavor < 0>>
+    Don Contento: You know what? I don’t like the energy you’re bringing to this audition
+    <<endif>>
+  <<if $lacrimosoFavor < 0>>
+    Don Lacrimoso: You just don’t fuckin’ get it, do you…?
+    <<endif>>
+  <<if $calvoFavor < 0>>
+    Don Calvo: This situation is getting hairy…
+    <<endif>>
+  <<if $billFavor < 0>>
+    Don BIll: Respectfully, I think you should leave
+    <<endif>>
+  <<if $espressoFavor < 0>>
+    Don Espresso: YOUTRYINGTOGETWHACKEDHUH?
+    <<endif>>
+
+  <<if $contentoFavor > 1 || $lacrimosoFavor > 1 || $calvoFavor > 1 || $billFavor > 1 || $espressoFavor > 1>>
+    <<if $contentoFavor > 1>>
+      Don Contento: Nah, this one’s a hoot! I wanna keep him around a bit longer.
+    <<endif>>
+    <<if $lacrimosoFavor > 1>>
+      Don Lacrimoso: Nah, let ‘im stay…
+    <<endif>>
+    <<if $calvoFavor > 1>>
+      Don Calvo: You know what? Let him stay. I think he’s got some real hair on his chest.
+    <<endif>>
+    <<if $billFavor > 1>>
+      Don Bill: He stays.
+    <<endif>>
+    <<if $espressoFavor > 1>>
+      Don Espresso: NOWAYI’MLETTINGYOUKICKHIMOUT
+    <<endif>>
+    You've been spared
+    <<else>>
+    Ya DEAD!
+  <<endif>>
+<<endif>>
+===

@@ -16,6 +16,8 @@ Don Contento: Alright, first question… Who would you consider to be your idol?
         Contento: See, I knew he was joking! Won’t lie, you had me for a second there.
         Espresso: I got my eye on you…
         You have lost favor with Don Espresso
+        <<set $espressoFavor = $espressoFavor - 1>>
+        <<detour judgement>>
     -> Yeah, I’m just breaking balls
         Calvo: You got some nerve…!
         Contento: Gentlemen, settle down! You can tear each other’s heads off later. Now’s the time to find people to help ya do it, hahaha! Next question!
@@ -32,9 +34,11 @@ Don Contento: Alright, first question… Who would you consider to be your idol?
     -> His charitable acts
         Contento: Oh yeah, I always dress up as Santa at Christmas, just like he did.
         You have curried favor with Don Contento
+        <<set $contentoFavor = $contentoFavor + 1>>
 -> Mickey Mouse
     Don Contento: Finally, a sense of humor!
     You have curried favor with Don Contento
+    <<set $contentoFavor = $contentoFavor + 1>>
 
 Don Lacrimoso: Alright Contento, you’ve eaten up enough time.
 Don Lacrimoso: My turn. What would you do if you felt like you didn’t wanna get out of bed?
@@ -43,23 +47,30 @@ Don Lacrimoso: My turn. What would you do if you felt like you didn’t wanna ge
     Don Contento: My kinda guy!
     Don Bill: The uncaring cruelty of the universe shrinks in the face of the indomitable human spirit
     You have curried favor with Don Contento and Don Bill
+    <<set $contentoFavor = $contentoFavor + 1>>
+    <<set $billFavor = $billFavor + 1>>
     Don Lacrimoso: Like it’s that easy…
     You’ve lost favor with Don Lacrimoso
+    <<set $lacrimosoFavor = $lacrimosoFavor - 1>>
+    <<detour judgement>>
 -> I’m not sure.
     Don Lacrimoso: Alright…
 -> I’d probably have to be dragged out…
     Don Lacrimoso: Yeah, same…
     You have curried favor with Don Lacrimoso
+    <<set $lacrimosoFavor = $lacrimosoFavor + 1>>
 
 Don Calvo: How’s my hair look?
 -> Pretty good!
     Don Calvo: Oh, thanks!
     You have curried favor with Don Calvo
+    <<set $calvoFavor = $calvoFavor + 1>>
 -> Very realistic!
     Don Calvo: You fucking with me?
     -> Yeah, it looks great.
         Don Calvo: Thanks
         You have curried favor with Don Calvo
+        <<set $calvoFavor = $calvoFavor + 1>>
     -> Yeah, it looks fake
         Don Calvo: Son of a bitch!
         BANG!
@@ -78,9 +89,12 @@ Don Espresso: YOUWANTSOMECOFFEE?!
         ->Decaf
             Don Espresso: COWARD!
             You have acquired coffee, but lost favor with Don Espresso
+            <<set $espressoFavor = $espressoFavor - 1>>
+            <<detour judgement>>
         ->Something local
             Don Espresso: HEREYAGO!
             You have acquired coffee and curried favor with Don Espresso
+            <<set $espressoFavor = $espressoFavor + 1>>
         ->Larbucks
             The color drains from Don Espresso’s face as he gives you a thousand yard stare. 
             Don Espresso: I’m gonna let you pick again…
@@ -93,6 +107,8 @@ Don Espresso: YOUWANTSOMECOFFEE?!
 -> Sure…
     Don Espresso: WHYSOGLUMABOUTIT?!
     You have lost favor with Don Espresso
+    <<set $espressoFavor = $espressoFavor - 1>>
+    <<detour judgement>>
 -> No thanks, I’m good.
     Don Espresso: TOTALLYGETITIT’SNOTFOREVERYONE
 <<wait  0.5>>
@@ -102,6 +118,7 @@ Don Bill: How ya doin’?
 -> Pretty good
     Don Bill: That’s nice
     You have curried favor with Don Bill
+    <<set $billFavor = $billFavor + 1>>
 -> Not so great lately, to be honest
     Don Bill:Oh, I’m sorry to hear that. Why’s that?
     <<jump InterviewDay1BillTherapyAnswer>>
@@ -114,14 +131,18 @@ title: InterviewDay1BillTherapyAnswer
     -> Wow, thanks! That’s a really good way to look at things!
         Don Bill: No problem, if you ever need someone to talk to, you can just reach out to me.
         You have curried favor with Don Bill
+        <<set $billFavor = $billFavor + 1>>
     -> I don’t need your advice, old man!
         Don Bill: Oh…
         You have lost favor with Don Bill. And hurt his feelings. Meanie
+        <<set $billFavor = $billFavor - 1>>
+         <<detour judgement>>
 -> My girlfriend broke up with me…
     Don Bill: Oof! I’ve been there. Going through that can be tough, but at the end of the day, there are plenty of fish in the sea.
     -> I guess…
         Don Bill: Hey, chin up. You’ll find someone else
         You have curried favor with Don Bill
+        <<set $billFavor = $billFavor + 1>>
     -> I just don’t know…
         Don Bill: I get it. Take your time
 -> I don’t wanna talk about it…
