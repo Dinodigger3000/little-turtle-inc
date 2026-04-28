@@ -59,5 +59,8 @@ TagManager:
   - name: Layer_4
     uniqueID: 1106895019
     locked: 0
+  - name: Highlights
+    uniqueID: 1407005059
+    locked: 0
   m_RenderingLayers:
   - Default

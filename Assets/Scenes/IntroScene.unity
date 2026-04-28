@@ -12727,6 +12727,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 312628979899036006, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 965584306367078409, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.62
@@ -16195,6 +16199,22 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[18].Array.data[10].Y
       value: -30000000
       objectReference: {fileID: 0}
+    - target: {fileID: 2024568526894671751, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3547878
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024568526894671751, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.3648939
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024568526894671751, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024568526894671751, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2102485404053958899, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
       propertyPath: m_TileMatrixArray.Array.size
       value: 1
@@ -16751,6 +16771,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3563664658491164756, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4245056241387175394, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
       propertyPath: m_Name
       value: WaitingRoom
@@ -16835,12 +16859,18 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[1].second.m_TileSpriteIndex
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6512375795268151227, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1310412619886045369, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
     - {fileID: 7328053688757041075, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+    - {fileID: 4899590288366380140, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+    - {fileID: 6593024422473007361, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5928851035851663791, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1286549418}
   m_SourcePrefab: {fileID: 100100000, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
 --- !u!1 &695308103
 GameObject:
@@ -18095,6 +18125,8 @@ MonoBehaviour:
   gun_load: {fileID: 8300000, guid: dbaada126f9864a9c8f8f5892cb761be, type: 3}
   gun_fire: {fileID: 8300000, guid: ac0cf2f027a9947a49696adaecc26801, type: 3}
   gun: {fileID: 1090934706}
+  locked_chest: {fileID: 1315963878}
+  unlocked_chest: {fileID: 1909199127}
 --- !u!1001 &1028741555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18423,6 +18455,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a19ddfd6309f4318bb9dff3772aa577, type: 3}
+--- !u!1 &1286549414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5928851035851663791, guid: ee6596ad0b90748078c8855cda34e787, type: 3}
+  m_PrefabInstance: {fileID: 679814310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1286549418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286549414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60abee302caa748999960aff5d75dc41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogue
+  dialogueRunner: {fileID: 0}
+  startNode: HeadsetMikeTime
+  interactAction:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0b50f39f-60d8-4b26-b6c5-f29575405fda
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+--- !u!1 &1315963878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7771739471437526661, guid: e6fba557c1c5f42a5a609400dc09a553, type: 3}
+  m_PrefabInstance: {fileID: 1782665017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1335899330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -114876,6 +114941,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1909199127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7346939253185780502, guid: e6fba557c1c5f42a5a609400dc09a553, type: 3}
+  m_PrefabInstance: {fileID: 1782665017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1427568808264774087
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7896450105711365116}
   - component: {fileID: 3735644189621378892}
   - component: {fileID: 7091130246374583481}
-  - component: {fileID: 8183802077592018400}
+  - component: {fileID: 4476819368337362268}
   m_Layer: 0
   m_Name: NPC1_0
   m_TagString: Untagged
@@ -123,11 +123,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.2731104}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -137,9 +137,9 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.375, y: 3.97}
+  m_Size: {x: 1.375, y: 3.423779}
   m_EdgeRadius: 0
---- !u!114 &8183802077592018400
+--- !u!114 &4476819368337362268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,12 +152,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogue
   dialogueRunner: {fileID: 0}
-  startNode: Contestant2
+  startNode: Contestant1
   interactAction:
     m_Name: Interact
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 2dbd5010-acf9-477c-9ef2-8314326a470f
+    m_Id: 5c103881-7e79-47e2-aec4-11ee06c84741
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
