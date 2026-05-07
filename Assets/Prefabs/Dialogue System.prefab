@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PortraitPresenter
   characters:
   - characterName: Sal
-    portrait: {fileID: -143774572126841323, guid: ba7390294ee64443b8acbc5d4a4ab6b5, type: 3}
+    portrait: {fileID: 2730180324253240339, guid: 00f63b1ae4fb24387a1a76c8456e4f30, type: 3}
   - characterName: Don Espresso
     portrait: {fileID: -1256143333757301354, guid: dd7e7cfdf3b0d4cd1958d6653d61a116, type: 3}
   - characterName: Don Bill
@@ -1757,6 +1757,10 @@ MonoBehaviour:
     portrait: {fileID: -816261379511117556, guid: 33e684e159d6d444c8f5e3f44c405f1f, type: 3}
   - characterName: "Sal\u2019s Dead Body"
     portrait: {fileID: -7172391513840639963, guid: da644f0085003412dabffb1aaaaeaca5, type: 3}
+  - characterName: Contestant 1
+    portrait: {fileID: -2256948484998397059, guid: a25f31ca86d824d20aace10b7b96dbee, type: 3}
+  - characterName: Contestant 2
+    portrait: {fileID: 8165316572449679646, guid: 4366280060ceb424d9de266c43e65c23, type: 3}
   portraitImage: {fileID: 2826631426099570473}
 --- !u!1 &9165915504719944591
 GameObject:

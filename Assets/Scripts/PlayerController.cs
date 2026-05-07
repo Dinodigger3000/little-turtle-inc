@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
   private Rigidbody2D rb;
   private Vector2 movement;
-  private string lastDirection = "Down";
   private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
 
