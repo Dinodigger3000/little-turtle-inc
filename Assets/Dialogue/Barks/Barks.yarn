@@ -86,22 +86,28 @@ title: judgement
   <<if $contentoFavor > 1 || $lacrimosoFavor > 1 || $calvoFavor > 1 || $billFavor > 1 || $espressoFavor > 1>>
     <<if $contentoFavor > 1>>
       Don Contento: Nah, this one’s a hoot! I wanna keep him around a bit longer.
+      <<set $contentoFavor = $contentoFavor - 1>>
     <<endif>>
     <<if $lacrimosoFavor > 1>>
       Don Lacrimoso: Nah, let ‘im stay…
+      <<set $lacrimosoFavor = $lacrimosoFavor - 1>>
     <<endif>>
     <<if $calvoFavor > 1>>
       Don Calvo: You know what? Let him stay. I think he’s got some real hair on his chest.
+      <<set $calvoFavor = $calvoFavor - 1>>
     <<endif>>
     <<if $billFavor > 1>>
       Don Bill: He stays.
+      <<set $billFavor = $billFavor - 1>>
     <<endif>>
     <<if $espressoFavor > 1>>
       Don Espresso: NOWAYI’MLETTINGYOUKICKHIMOUT
+      <<set $espressoFavor = $espressoFavor - 1>>
     <<endif>>
     You've been spared
     <<else>>
     Ya DEAD!
+    But feel free to keep playing 
   <<endif>>
 <<endif>>
 ===

@@ -136,7 +136,7 @@ title: InterviewDay1BillTherapyAnswer
         Don Bill: Oh…
         You have lost favor with Don Bill. And hurt his feelings. Meanie
         <<set $billFavor = $billFavor - 1>>
-         <<detour judgement>>
+        <<detour judgement>>
 -> My girlfriend broke up with me…
     Don Bill: Oof! I’ve been there. Going through that can be tough, but at the end of the day, there are plenty of fish in the sea.
     -> I guess…
@@ -152,4 +152,77 @@ title: InterviewDay1BillTherapyAnswer
     -> No, I really don’t
         Don Bill: Ok, buddy. We can talk after if you want. And if you survive.
 Don Calvo: Alright, get a move-on! This is an audition, not a therapy session! 
+<<jump DonTrivia>>
+===
+
+
+title: DonTrivia
+---
+Don Contento: Alright, trivia time! I’m gonna ask you a few questions about me, and if you get them right, you’ll curry favor with me. If you get them wrong, well… let’s just say it won’t be good for your health. You ready?
+Don Contento: What is my favorite food?
+-> Broccoli
+    Don Contento: Good one!
+-> Mac and Cheese
+    Don Contento: Bingo!
+    You have curried favor with Don Contento
+    <<set $contentoFavor = $contentoFavor + 1>>
+    Don Contento: I really love it with bread crumbs and cavatappi
+-> Pizza
+    Don Contento: That’s a stereotype! And it’s offensive!
+    You have lost favor with Don Contento
+    <<set $contentoFavor = $contentoFavor - 1>>
+    <<detour judgement>>
+
+Don Lacrimoso: What is my favorite book series?
+-> A Song of Ice and Fire
+    Don Lacrimoso: Winds is never coming out…
+    You have curried favor with Don Lacrimoso
+    <<set $lacrimosoFavor = $lacrimosoFavor + 1>>
+-> Wheel of Time
+    Don Lacrimoso: Eh
+-> Winnie the Pooh
+    Don Lacrimoso: So we got a wise guy, huh?
+
+Don Calvo: Am I wearing a toupee?
+-> Yes
+    you’ve lost favor with Don Calvo
+    <<set $calvoFavor = $calvoFavor - 2>>
+    <<detour judgement>>
+-> No
+    Don Calvo: T- that’s correct!
+    You have curried favor with Don Calvo
+    <<set $calvoFavor = $calvoFavor + 1>>
+-> Maybe…?
+    Don Calvo: … You’ve saved yourself this time.
+
+Don Bill: Do you like Spider-Man?
+-> Yeah, he’s my favorite superhero by far. 
+    Don Bill: Really? He’s mine too! You can see genuine joy spark in Don Bill’s eyes What’s your favorite story?
+    -> Spider-Man Blue
+        Don Bill: A re-telling and enhancement of a classic!
+        You have curried favor with Don Bill
+        <<set $billFavor = $billFavor + 1>>
+    -> Superior Spider-Man
+        Don Bill: Much of the supporting cast was out of character, but Otto’s arc was very compelling!
+        You have curried favor with Don Bill
+        <<set $billFavor = $billFavor + 1>>
+    -> One More Day
+        Don Bill: Don’t even fucking joke
+        You have lost favor with Don Bill
+        <<set $billFavor = $billFavor - 1>>
+        <<detour judgement>>
+->Yeah, but I prefer Batman
+    He’s pretty cool too
+->No, not really.
+    I mean, everybody’s entitled to their opinions…
+    He tries to hide it, but you have lost favor with Don Bill
+    <<set $billFavor = $billFavor - 1>>
+<<jump EndOfGame>>
+===
+
+
+title: EndOfGame
+---
+This is the end of the game for now, thanks for playing!
+Feel free to restart the game to try other dialogue options
 ===

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class JournalManager : MonoBehaviour
 {
@@ -40,8 +41,9 @@ public class JournalManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-            journalPanel.SetActive(!journalPanel.activeSelf);
+        // Buggy feature, typing j in the text box closes the journal and the open button doesn't reappear after that.
+        // if (Keyboard.current.jKey.wasPressedThisFrame)
+        //     journalPanel.SetActive(!journalPanel.activeSelf);
     }
 
     void SpawnEntry(string text)
